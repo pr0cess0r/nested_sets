@@ -164,7 +164,7 @@ class NestedSets {
 				UPDATE '.$this->tbl.' 
 				SET left_key = left_key - '.$skew_tree.' 
 				WHERE 
-					left_key > '.$left_key.' AND 
+					left_key > '.$right_key.' AND 
 					left_key <= '.$right_key_near;
 				
 			$sql[2] = '
